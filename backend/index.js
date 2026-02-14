@@ -27,6 +27,10 @@ app.use(cors());
 //     allowedHeaders: ["Content-Type"]
 // }));
 
+app.get("/", (req,res)=>{
+  res.send("Backend is live!");
+});
+
 // Router for Book Routes
 app.use("/books", booksRoute);
 
